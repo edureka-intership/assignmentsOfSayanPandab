@@ -1,0 +1,67 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav{
+      padding: 30px 10px;
+      background: linear-gradient(#ede2e200, #2b0e0e), url("food1.jpg");
+      background-position: center;
+      background-attachment:fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+ 
+  .logo_search{
+      text-align: center;
+      padding: 20px 20px 40px 20px;
+  }
+  .logo_search img{
+      border-radius: 50%;
+  }
+  .logo_search p{
+    font-size: 25px;
+    color: white;
+  }
+  .logo_search input{
+    padding: 18px 50px;
+    width: 300px;
+  }
+  .logo_search i{
+      margin: 22px 0 0 20px;
+      position: absolute;
+  }
+  section{
+      padding: 20px;
+  }
+  .heading{
+    line-height: 40px;
+  }
+  .heading h2{
+      color: #192F60;
+  }
+  .heading h5{
+      color: #8C96AB;
+  }
+  .fds{
+      margin: 20px 0;
+  }
+  .fds img{
+      width: 150px;
+      height: 150px;
+  }
+  .fdType{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    margin: 20px 0;
+  }
+  .dtls{
+      padding: 20px 20px;
+  }
+  .dtls h4{
+    color: #192F60;
+  }
+  .dtls{
+    color: #8C96AB;
+  }

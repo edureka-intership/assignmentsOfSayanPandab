@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  nav{
+      padding: 20px;
+      background: linear-gradient(#b1202000, #562222), url("food1.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .login{
+      text-align: right;
+      /* padding: 20px 30px; */
+  }
+  .login button{
+      padding: 12px;
+      margin-right: 30px;
+      background-color: transparent;
+      color: white;
+      border: none;
+  }
+  .login button:hover{
+    border: 1px solid;
+  }
+  .logo_search{
+      text-align: center;
+      padding: 20px 20px 40px 20px;
+      line-height: 80px;
+  }
+  .logo_search img{
+      border-radius: 50%;
+  }
+  .logo_search p{
+    font-size: 30px;
+    color: white;
+  }
+  .logo_search input{
+    padding: 18px 30px;
+  }
+  .logo_search i{
+      margin: 31px 0 0 30px;
+      position: absolute;
+  }
+  .restaurant{
+      width: 380px;
+      margin-left: 20px;
+  }
+  section{
+      padding: 50px;
+  }
+  .heading{
+    line-height: 40px;
+  }
+  .heading h1{
+      color: #192F60;
+  }
+  .heading h3{
+      color: #8C96AB;
+  }
+  .fds{
+      margin: 50px 0;
+  }
+  .foods{
+      display: flex;
+  }
+  .foods img{
+      width: 200px;
+      height: 200px;
+  }
+  .fdType{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    /* border: 1px solid black; */
+    margin: 15px;
+  }
+  .dtls{
+      padding: 40px 20px;
+  }
+  .dtls h3{
+    color: #192F60;
+  }
+  .dtls{
+    color: #8C96AB;
+  }
