@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js assignment</title>
+    
+</head>
+
+<body>
+    <h2>Edureka Js Assignment - 3</h2>
+    <p>3.1. (Create a JavaScript restaurantManager class with the following properties:)</p>
+    <p>3.2. (Please find order details for Punjabi Tadka restaurant in Delhi as:)</p>
+    <p id="result"></p>
+    <p id="result1"></p>
+
+    <script>
+        // Edureka Js assignment 
+        // 3.1. (Create a JavaScript restaurantManager class with the following properties:)
+        class restaurantManager {
+
+            restaurantList = [
+                { name: "Barbeque Nation", location: "Park Street", city: "Kolkata" },
+                { name: "Margarita", location: "City Center", city: "Durgapur" },
+                { name: "Sadda Adda", location: "IIT", city: "Kharagpur" }
+            ];
+
+            printAllRestaurantNames() {
+                this.restaurantList.forEach((restro) => {
+                    console.log(restro.name);
+                });
+            }
+
+            filterRestaurantByCity(city) {
+                return this.restaurantList.filter(item => item.city == city);
+            }
+        }
+
+        let obj = new restaurantManager();
+        obj.printAllRestaurantNames();
+        const flterData = obj.filterRestaurantByCity("Kharagpur");
+        console.log(flterData);
+
+
+        // 3.2. (Please find order details for Punjabi Tadka restaurant in Delhi as:)
+        var orderData = {
+            'Below 500': 20,
+            '500-1000': 29,
+            '1000-1500': 30,
+            '1500-2000': 44,
+            'Above 2000': 76
+        };
+        const total = Object.values(orderData).reduce((acc, cur) => acc + cur, 0);
+        document.getElementById("result").innerHTML = "Total number of orders placed = " + total; // 3.2.a
+        document.getElementById('result1').innerHTML = "Total number of order proportions = " + Object.keys(orderData).length;  // 3.2.b
+
+        var arr = [];
+        let keys = Object.keys(orderData);
+        for (var i = 0; i < keys.length; i++) {
+            var percentage = (orderData[keys[i]] * 100) / 199;
+            arr.push({ id: i + 1, order: keys[i], order_percentage: percentage.toFixed(2), restaurant: "Punjabi Tadka" })
+        }
+        console.log(arr); // 3.2.c
+
+    </script>
+</body>
+
+</html>

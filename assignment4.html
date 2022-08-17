@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>Edureka Js Assignment - 4</h2>
+    <p> 4.a. Calculate the Average rating for all the restaurants.</p>
+    <p>4.b. List of all restaurants with average rating greater than or equal to 4.</p>
+    <p id="result"></p>
+    <p id="result1"></p>
+
+    <script>
+        // 4. (Please find customer's rating data for multiple restaurants as :)
+
+        // a. Calculate the Average rating for all the restaurants.
+        ratingData = [
+            { restaurant: 'KFC', rating: 5 },
+            { restaurant: 'Burger King', rating: 4 },
+            { restaurant: 'KFC', rating: 3 },
+            { restaurant: 'Domino', rating: 2 },
+            { restaurant: 'Subway', rating: 3 },
+            { restaurant: 'Domino', rating: 1 },
+            { restaurant: 'Subway', rating: 4 },
+            { restaurant: 'Pizza Hut', rating: 5 }
+        ]
+
+        var arr = [];
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  //
+        var restaurant1 = ratingData.filter(obj => {
+            return obj.restaurant === "KFC"
+        })
+        // console.log(restaurant1)
+        // console.log(restaurant1.length)
+        let totalRatingOfRestaurant1 = 0;
+        for (var i = 0; i < restaurant1.length; i++) {
+            totalRatingOfRestaurant1 = totalRatingOfRestaurant1 + restaurant1[i].rating;
+        }
+        // console.log(totalRatingOfRestaurant1)
+        let AverageRatingOfRestaurant1 = totalRatingOfRestaurant1 / restaurant1.length;
+        // console.log(AverageRatingOfRestaurant1);
+        arr.push({ restaurant: 'KFC', averageRating: AverageRatingOfRestaurant1 })
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+        var restaurant2 = ratingData.filter(obj => {
+            return obj.restaurant === "Burger King"
+        })
+        // console.log(restaurant2)
+        // console.log(restaurant2.length)
+        let totalRatingOfRestaurant2 = 0;
+        for (var i = 0; i < restaurant2.length; i++) {
+            totalRatingOfRestaurant2 = totalRatingOfRestaurant2 + restaurant2[i].rating;
+        }
+        // console.log(totalRatingOfRestaurant1)
+        let AverageRatingOfRestaurant2 = totalRatingOfRestaurant2 / restaurant2.length;
+        // console.log(AverageRatingOfRestaurant2);
+        arr.push({ restaurant: 'Burger King', averageRating: AverageRatingOfRestaurant2 })
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+        var restaurant3 = ratingData.filter(obj => {
+            return obj.restaurant === "Domino"
+        })
+        // console.log(restaurant3);
+        // console.log(restaurant3.length)
+        let totalRatingOfRestaurant3 = 0;
+        for (var i = 0; i < restaurant3.length; i++) {
+            totalRatingOfRestaurant3 = totalRatingOfRestaurant3 + restaurant3[i].rating;
+        }
+        // console.log(totalRatingOfRestaurant1)
+        let AverageRatingOfRestaurant3 = totalRatingOfRestaurant3 / restaurant3.length;
+        // console.log(AverageRatingOfRestaurant3);
+        arr.push({ restaurant: 'Domino', averageRating: AverageRatingOfRestaurant3 })
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+        var restaurant4 = ratingData.filter(obj => {
+            return obj.restaurant === "Subway"
+        })
+        // console.log(restaurant4);
+        // console.log(restaurant4.length)
+        let totalRatingOfRestaurant4 = 0;
+        for (var i = 0; i < restaurant4.length; i++) {
+            totalRatingOfRestaurant4 = totalRatingOfRestaurant4 + restaurant4[i].rating;
+        }
+        // console.log(totalRatingOfRestaurant1)
+        let AverageRatingOfRestaurant4 = totalRatingOfRestaurant4 / restaurant4.length;
+        // console.log(AverageRatingOfRestaurant4);
+        arr.push({ restaurant: 'Subway', averageRating: AverageRatingOfRestaurant4 })
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ //
+        var restaurant5 = ratingData.filter(obj => {
+            return obj.restaurant === "Pizza Hut"
+        })
+        // console.log(restaurant5);
+        // console.log(restaurant5.length)
+        let totalRatingOfRestaurant5 = 0;
+        for (var i = 0; i < restaurant5.length; i++) {
+            totalRatingOfRestaurant5 = totalRatingOfRestaurant5 + restaurant5[i].rating;
+        }
+        // console.log(totalRatingOfRestaurant1)
+        let AverageRatingOfRestaurant5 = totalRatingOfRestaurant5 / restaurant5.length;
+        // console.log(AverageRatingOfRestaurant5);
+        arr.push({ restaurant: 'Pizza Hut', averageRating: AverageRatingOfRestaurant5 })
+
+        console.log(arr);
+
+
+        // 4.b. List of all restaurants with average rating greater than or equal to 4.
+        let ratingGreaterThanEqualTo4 = arr.filter(obj => {
+            return obj.averageRating >= 4
+        })
+        console.log(ratingGreaterThanEqualTo4);
+    </script>
+</body>
+
+</html>
